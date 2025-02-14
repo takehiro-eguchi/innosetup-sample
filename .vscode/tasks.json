@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "innosetup-build",
+			"label": "innosetup: compile script",
+			"command": "C:\\Program Files (x86)\\Inno Setup 6\\ISCC.exe",
+			"args": [
+				"${file}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$innosetup-6-error",
+				"$innosetup-5-error",
+				"$innosetup-5-warning"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\Program Files (x86)\\Inno Setup 6\\ISCC.exe"
+		}
+	]
+}
